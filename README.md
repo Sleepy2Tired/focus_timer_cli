@@ -1,68 +1,69 @@
 # Focus Timer CLI
-A command-line tool to boost your productivity with Pomodoro sessions.
+A command-line Pomodoro timer to enhance productivity and track your sessions.
 
 ## Features
 - Start and stop Pomodoro sessions
-- Check current session status
-- Log sessions to CSV for easy tracking
+- Check current timer status
+- Log sessions in CSV format for easy tracking
 - Simple and intuitive command-line interface
 
 ## Quickstart
-To install Focus Timer CLI, clone the repository and install the dependencies:
+To get started with Focus Timer CLI, follow these simple steps:
 
-```bash
-git clone https://github.com/yourusername/focus-timer-cli.git
-cd focus-timer-cli
-pip install -r requirements.txt
-```
+1. **Install the tool**:
+   ```bash
+   npm install -g focus-timer-cli
+   ```
+
+2. **Run the timer**:
+   ```bash
+   focus-timer start
+   ```
 
 ## Usage Examples
-Start a new Pomodoro session:
+- **Start a Pomodoro session**:
+  ```bash
+  focus-timer start
+  ```
 
-```bash
-focus-timer start
-```
+- **Stop the current session**:
+  ```bash
+  focus-timer stop
+  ```
 
-Stop the current session:
+- **Check the current status**:
+  ```bash
+  focus-timer status
+  ```
 
-```bash
-focus-timer stop
-```
-
-Check the status of the current session:
-
-```bash
-focus-timer status
-```
-
-View your session logs in CSV format:
-
-```bash
-focus-timer logs
-```
+- **View session logs**:
+  ```bash
+  focus-timer logs
+  ```
 
 ## Configuration
-Focus Timer CLI allows you to customize session durations. Edit the configuration file located at `config.json`:
+Focus Timer CLI comes with default settings. You can customize the following parameters:
+- **Pomodoro Duration**: Set your desired session length (default: 25 minutes).
+- **Break Duration**: Set your break length (default: 5 minutes).
+- **CSV Log Path**: Specify where to save session logs.
 
-```json
-{
-  "work_duration": 25,
-  "break_duration": 5
-}
-```
+Edit the configuration file located at `~/.config/focus-timer/config.json` to adjust these settings.
 
 ## Roadmap
-- [ ] Add notifications for session start and end
-- [ ] Implement user-defined session lengths
-- [ ] Enhance CSV logging with additional metrics
-- [ ] Create a desktop version of the timer
+- [ ] Add notification features for session completion
+- [ ] Implement customizable session lengths
+- [ ] Introduce a GUI version of the timer
+- [ ] Enhance logging with analytics features
 
 ## FAQ
-**Q: Can I customize session lengths?**  
-A: Yes, you can modify the `config.json` file to set your desired durations.
+**Q: Can I change the timer durations?**  
+A: Yes, you can modify the Pomodoro and break durations in the configuration file.
 
 **Q: How do I view my session logs?**  
-A: Use the command `focus-timer logs` to display your session logs in CSV format.
+A: Use the command `focus-timer logs` to access your CSV logs.
+
+**Q: Is this tool cross-platform?**  
+A: Yes, Focus Timer CLI works on Windows, macOS, and Linux.
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
